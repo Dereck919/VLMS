@@ -11,4 +11,4 @@ If you ever get stuck on a screen try inputing a random integer and pressing ent
 since it runs in a loop the program may sometimes wait for user input before advancing so the user has enough time to read what 
 is on the screen
 
-Also adding do not input any strings with spaces 
+Also do not input any strings with spaces 
