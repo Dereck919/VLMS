@@ -10,3 +10,5 @@ ie. if asked for a number inputing a letter may crash the program
 If you ever get stuck on a screen try inputing a random integer and pressing enter to get to the next portion of the program,
 since it runs in a loop the program may sometimes wait for user input before advancing so the user has enough time to read what 
 is on the screen
+
+Also do not input any strings with spaces 
