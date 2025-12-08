@@ -292,7 +292,7 @@
         vector<friendBST> friendList;
         
         clearConsole();
-        /*
+        
         //-----------------------------------------------------------
         //If hash table is empty add a new user
         if(users.size() == 0){
@@ -333,7 +333,7 @@
             return 0;
         }
         clearConsole();
-        */
+        
         //-----------------------------------------------------------
 
         //Get user preference 
@@ -380,7 +380,7 @@
         cout <<"3 VIEW LIBRARY" << endl;
         cout <<"4 REMOVE GAME" << endl;
         cout <<"5 REMOVE FRIEND" << endl;
-        cout <<"6 GET RECOMMENDATION BY GENRE" << endl;
+        cout <<"6 GET RECOMMENDATION FROM FAVORITE GENRE" << endl;
         cout <<"7 SHOW FRIEND(S)" << endl;
         cout <<"8 UNDO LAST ACTION: " << endl;
         if(stk.size() == 0){
