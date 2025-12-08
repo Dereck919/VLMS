@@ -86,6 +86,7 @@
             }
         }
     }
+
     void printLibrary() const {
         for (int g = Horror; g <= Platformer; ++g) {
             cout << "Genre: ";
@@ -200,8 +201,6 @@
     void addUser(string userN, string passW){
         users[userN] = hash_password(passW);
     }
-
-
 
     class friendBST{
         Node* rightRoot = nullptr;
@@ -472,6 +471,8 @@
             gGraph.printLibrary();
             cin >> wait;
             break;
+            
+            //REMOVE GAME 
             case 4:{
             clearConsole();
             Game removedGame;
@@ -515,7 +516,6 @@
                 stk.push(action);
                 break;
             }
-            
             
             case 6:{
                 Node* input = genreRec(gGraph, userPref);
