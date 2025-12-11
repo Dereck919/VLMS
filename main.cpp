@@ -555,20 +555,24 @@
             if(stk.top().type == addGame){
                 gGraph.removeGame(stk.top().game.Title);
                 stk.pop();
+                break;
             }else if(stk.top().type == removeGame){
                 gGraph.addGame(stk.top().game);
                 stk.pop();
+                break;
             }else if(stk.top().type == addFriend){
-                int j = 0;
-                for(auto i : friendList){
-                    if(friendList[j].getN() == stk.top().frien.Name){
-                        friendList.erase(friendList.begin() + j);
-                    }
-                }
+                ActionT action = stk.top();
                 stk.pop();
+                for (auto it = friendList.begin(); it != friendList.end(); ++it) {
+                    if (it->getN() == action.frien.Name) {
+                    friendList.erase(it);
+                    break; 
+                    }               
+                }   
             }else if(stk.top().type == removeFriend){
                 friendList.emplace_back(stk.top().frien, gGraph);
                 stk.pop();
+                break;
             }
             break;
         }
